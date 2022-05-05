@@ -7,7 +7,7 @@
     usr_groups: "Users"
   tasks:
     - name: create local user
-      ansible.windows.win_user:
+      win_user:
         name: "{{ usr_name }}"
         password: "{{ usr_password }}"
         groups: "{{ usr_groups }}"
