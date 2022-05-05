@@ -1,6 +1,6 @@
 ---
 - name: windows user add
-  hosts: all
+  hosts: win
   vars:
     usr_groups: "Users"
   tasks:
