@@ -6,10 +6,10 @@
     usr_password: 'Wlsldks123!'
     usr_groups: "Users"
   tasks:
-    - name: create local user
-      ansible.windows.win_user:
-        name: "{{ usr_name }}"
-        password: "{{ usr_password }}"
-        groups: "{{ usr_groups }}"
-        update_password: on_create
-        password_expired: true
+    - name: Ensure user bob is present
+      win_user:
+        name: bob
+        password: B0bP4ssw0rd
+        state: present
+        groups:
+         - Users
