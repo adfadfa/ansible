@@ -3,6 +3,9 @@
   hosts: win
   vars:
     usr_groups: "Users"
+    usr_name:
+    usr_password:
+    
   tasks:
     - name: create local user
       ansible.windows.win_user:
