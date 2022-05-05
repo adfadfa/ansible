@@ -3,8 +3,8 @@
   hosts: win
   vars:
     usr_groups: "Users"
-    usr_name:
-    usr_password:
+    usr_name: "test111"
+    usr_password:"Wlsldks123!"
     
   tasks:
     - name: create local user
