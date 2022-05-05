@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+   - name: Run a script
+     win_shell: NET ACCOUNTS /MINPWLEN:7
